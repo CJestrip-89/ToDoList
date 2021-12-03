@@ -10,12 +10,20 @@ public class List extends JPanel {
         layout.setVgap(5);
 
         this.setLayout(layout);
-        this.setBackground(Color.BLUE);
+//        this.setBackground(Color.BLUE);
     }
 
     public void  updateNumbers()
     {
-        Component[] list
+        Component[] listItems = this.getComponents();
+
+        for(int i = 0; i< listItems.length; i++)
+        {
+            if(listItems[i]instanceof Task)
+            {
+                ((Task)listItems[i]).changeIndex(i+1);
+            }
+        }
     }
 
 }

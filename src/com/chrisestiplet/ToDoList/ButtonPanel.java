@@ -30,18 +30,17 @@ public class ButtonPanel extends JPanel{
         clear.setBorder(emptyBorder);
         clear.setFont(new Font("Sans-serif", Font.PLAIN, 20));
         this.add(clear);
-
     }
-//    Button Functions
 
-    public JButton getAddTask(){
+//    Button Functions
+    public JButton getAddTask()
+    {
         return addTask;
     }
 
-    public JButton getClear(){
+    public JButton getClear()
+    {
         return clear;
     }
-
-
 
 }

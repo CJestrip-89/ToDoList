@@ -34,9 +34,21 @@ public class Task extends JPanel {
 
         this.add(done, BorderLayout.EAST);
 
+    }
 
+    public JButton getDone() {
+        return done;
+    }
 
+    public void changeIndex(int num){
+        this.index.setText(num+"");
+        this.revalidate();
+    }
 
-
+    public void changeState()
+    {
+        this.setBackground(Color.green);
+        taskName.setBackground(Color.green);
+        checked = true;
     }
 }
